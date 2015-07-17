@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Game Cloud App</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.0rc1.min.css" />
+    <link rel="stylesheet"  href="css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/jquery.js"></script>  
+       
+    <script src="js/login.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+    
+<body>
+        
+
+
+
+<section id="login" data-role="page">
+        <header data-role="header">
+            <h1>Login Game Cloud</h1>
+        </header>
+        <article data-role="content">
+            <form id="form_login">
+                <div data-role="fieldcontain" class="ui-hide-label">
+                    <label for="txtuser">Usuario:</label>
+                    <input type="text" name="txtuser" id="txtuser" value="" placeholder="Name" />
+                </div>
+                <div data-role="fieldcontain" class="ui-hide-label">
+                    <label for="txtpassword">Contraseña:</label>
+                    <input type="password" name="txtpassword" id="txtpassword" value="" placeholder="Password" />
+                </div>
+                <input type="button" value="Login" id="btnLogin">
+            </form>
+             <!--<div id="errorMsg" style="background-color:red;color: #FFFFFF;">Usuario o Contraseña no valida</div>-->
+        </article>
+    </section>
+    <!-- Aqui nuestro dialog con el mensaje de error  -->
+    <section id="pageError" data-role="dialog">
+        <header data-role="header">
+            <h1>Error</h1>
+        </header>
+        <article data-role="content">
+            <p>Usuario o contraseña no valida</p>
+            <a href="#" data-role="button" data-rel="back">Aceptar</a>
+        </article>
+    </section>
+
+
+
+<div id="employeeListPage" data-role="page" >
+
+	<div data-role="header" data-position="fixed">
+		<h1>Juegos de Game Cloud</h1>
+	</div>
+
+	<div data-role="content">
+         <ul id="employeeList" data-role="listview" data-filter="true"></ul>
+    </div>		
+
+</div>
+
+<script src="js/jquery2.js"></script>
+<script src="js/jquery.mobile-1.0rc1.min.js"></script>
+<script src="js/employeelist.js"></script>
+<script src="js/employeedetails.js"></script>
+<script src="js/reportlist.js"></script>
+
+</body>
+
+</html>
