@@ -23,6 +23,7 @@
 }
 .contenedorHeader{
 	padding: 5%;
+	text-align: center;
 
 
 }
@@ -30,6 +31,7 @@
 text-shadow:none;
   color: #9d9d9d;
   text-decoration:none; 
+  text-align: center;
 
 }
 
